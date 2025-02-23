@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+      --black:#000;
+      --white:#fff;
+   
+      --blight:#333;
+    --border:.1rem solid var(--black);
+    --border-hover:.1rem solid var(--blight);
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+ 
+    transition:all .2s linear;
+    transition:width none;
+    
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+}
+
+header{
+   
+    text-align: center;
+    padding:1.5rem 7%;
+   box-shadow: var(--box-shadow);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    background: var(--white);
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);
+    text-transform: uppercase;
+}
+.logo i{
+    color:var(--black)
+}
+.home .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.home{
+    position: relative;
+    top: 9.9vh;
+    left: 0;
+    right: 0;
+    min-height: 100vh;
+    padding: 1rem;
+}
+.home .box-container .box{
+    flex: 1 1 30rem;
+    padding: 2rem 3%;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: column;
+  
+    
+}
+.home .box-container .history{
+    overflow-x: scroll;
+}
+.home .box-container .box table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .home .box-container .box td {
+   font-size: 12px;
+    text-align: justify;
+    padding: .8rem;
+    border-bottom: 1px solid #ddd;
+
+  }
+  .home .box-container .box td i{
+    font-size: 12px;
+     color: red;
+   
+  }
+
+.variable form,.variable{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+.box h3,h4{
+    text-align: center;
+    border-bottom: var(--border);
+    font-size: 2rem;
+   
+    margin-bottom: 2rem;
+}
+.box input{
+    border: var(--border);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+.calculator{
+    height: 85vh;
+}
+
+.display{
+    height: 16vh;
+  box-shadow: var(--box-shadow);
+  margin-bottom: .7rem;
+ 
+}
+.display input{
+    text-align: right;
+   
+    padding:2rem  3%;
+    height: 40%;
+ width: 100%;
+ border: none;
+ font-weight:500;
+ font-size: 14px;
+
+  
+  
+}
+.result{
+    text-align: right;
+    font-size: 16px;
+    padding:2rem  3%;
+    height: 55%;
+    overflow: hidden;
+    font-weight: bolder;
+ 
+}
+
+.buttons{
+    box-shadow: var(--box-shadow);
+}
+.row{
+    padding: 1rem;
+   display: flex;
+  justify-content: space-around;
+}
+.btn{
+   width: 18%;
+   text-transform: none;
+   height: 4rem;
+   background: var(--white);
+   box-shadow: var(--box-shadow);
+  
+}
